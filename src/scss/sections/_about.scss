@@ -1,0 +1,220 @@
+.about {
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 185px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/sprite.svg#star);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &::before {
+    bottom: 30%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  @media (max-width: 1230px) {
+    &::before {
+      bottom: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 123px;
+    &::before,
+    &::after {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 80px;
+    @media (max-width: 1230px) {
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      padding: 40px;
+      border-radius: 4px;
+      background-image: linear-gradient(45deg, #002296, #82008f, #c0007a, #ea0c5f, #ff5341, #ff8820, #f6ba00);
+      background-size: 150%;
+      animation: animateborder 3s ease infinite paused;
+      animation-play-state: running;
+    }
+    @media (max-width: 768px) {
+      gap: 10px;
+      padding: 20px 20px 20px 28px;
+    }
+  }
+
+  &__photo {
+    width: 200px;
+    height: 200px;
+    @media (max-width: 768px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &__box {
+    padding: 40px;
+    border-radius: 4px;
+    background-image: linear-gradient(45deg, #002296, #82008f, #c0007a, #ea0c5f, #ff5341, #ff8820, #f6ba00);
+    background-size: 150%;
+    animation: animateborder 4s ease infinite paused;
+    animation-play-state: running;
+    @media (max-width: 1230px) {
+      padding: 0;
+      border-radius: 0;
+      background-image: none;
+      animation: none;
+    }
+  }
+
+  &__box-title {
+    position: relative;
+    display: inline-block;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -5px;
+      width: 50px;
+      height: 50px;
+      transform: translate(100%, -50%);
+      background-image: url(../img/sprite.svg#icon-resume);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    @media (max-width: 768px) {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 10px;
+      &::after {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__info {
+    margin-bottom: 20px;
+    @media (max-width: 1230px) {
+      margin-bottom: 0;
+    }
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -17px;
+      width: 10px;
+      height: 10px;
+      transform: translateY(100%);
+      border-radius: 50%;
+      background-color: cyan;
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 17px;
+      &::before {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    padding-right: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    @media (max-width: 768px) {
+      padding-right: 25px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__icon_responsive {
+    &::before {
+      background-image: url(../img/sprite.svg#icon-responsive);
+    }
+  }
+
+  &__icon_browser {
+    &::before {
+      background-image: url(../img/sprite.svg#icon-browser);
+    }
+  }
+
+  &__icon_semantic {
+    &::before {
+      background-image: url(../img/sprite.svg#icon-semantic);
+    }
+  }
+
+  &__icon_gulp {
+    &::before {
+      background-image: url(../img/sprite.svg#icon-gulp);
+    }
+  }
+
+  &__icon_webpack {
+    &::before {
+      background-image: url(../img/sprite.svg#icon-webpack);
+    }
+  }
+
+  &__icon_scss {
+    &::before {
+      background-image: url(../img/sprite.svg#icon-scss);
+    }
+  }
+
+  &__icon_js {
+    &::before {
+      background-image: url(../img/sprite.svg#icon-js);
+    }
+  }
+}

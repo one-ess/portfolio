@@ -1,0 +1,14 @@
+@import "./scss/base/mixins";
+@import "./scss/base/fonts";
+@import "./scss/base/null";
+@import "./scss/base/vars";
+@import "./scss/base/global";
+@import "./scss/base/keyframes";
+
+@import "./scss/partials/header";
+@import "./scss/partials/footer";
+
+@import "./scss/sections/about";
+@import "./scss/sections/contacts";
+@import "./scss/sections/projects";
+@import "./scss/sections/skills";

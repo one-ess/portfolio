@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.min.css" />
+    <script defer src="js/index.min.js"></script>
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__top">
+            <a class="header__logo" href="#"> &#60; TArthur /&#62; </a>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="#about">Резюме</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#skills">Навыки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#projects">Работы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="header__box">
+            <p class="header__box-text">Приветствую, Я - <span>Тухватулин Артур</span></p>
+            <p class="header__box-text">Веб-разработчик и HTML-верстальщик</p>
+          </div>
+          <a class="header__mouse" href="#about"><span></span></a>
+          <div class="header__arrows">
+            <div class="header__arrow"></div>
+            <div class="header__arrow header__arrow_delay1"></div>
+            <div class="header__arrow header__arrow_delay2"></div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section id="about" class="about">
+          <div class="container">
+            <div class="title-wrapper"><h2 class="about__title title">Резюме</h2></div>
+            <div class="about__wrapper">
+              <picture data-da=".about__wrapper, 1230, first">
+                <source srcset="img/photo.webp" type="image/webp" />
+                <img class="about__photo" src="img/photo.png" loading="lazy" alt="Фото" />
+              </picture>
+              <div class="about__box">
+                <h2 class="about__box-title">Обо мне</h2>
+                <div class="about__info"><span>Артур 23 года</span>, <span> г. Астана</span></div>
+                <div class="about__text-box" data-da=".about__wrapper, 1230, last">
+                  <p class="about__text">
+                    Я занимаюсь разработкой интерфейсов для сайтов в интернете. Самоучка. Имею высшее техническое образование.
+                  </p>
+                  <p class="about__text">
+                    Делаю <span class="about__icon about__icon_responsive">адаптивно</span>,
+                    <span class="about__icon about__icon_browser">кроссбраузерно</span>,
+                    <span class="about__icon about__icon_semantic">по семантике</span>, без фреймворков для вёрстки, без конструкторов.
+                  </p>
+                  <p class="about__text">
+                    В работе использую <span class="about__icon about__icon_gulp">Gulp</span>, в связке с
+                    <span class="about__icon about__icon_webpack">Webpack</span>, препроцессор <span class="about__icon about__icon_scss">SCSS</span>,
+                    и конечно <span class="about__icon about__icon_js">JavaScript</span>.
+                  </p>
+                  <p class="about__text">Пишу валидный, структурированный код с комментариями, который будет понятен другому веб разработчику.</p>
+                  <p class="about__text">
+                    Мой прогресс в мире веб разработки не стоит на месте, каждый день я совершенствуюсь и развиваюсь, узнаю что-то новое, прокачиваю
+                    свой стек навыков, улучшаю качество своего кода.
+                  </p>
+                  <p class="about__text">В будущем желаю занять позицию Junior Front-end разработчика.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="skills" class="skills">
+          <div class="container">
+            <div class="title-wrapper"><h2 class="skills__title title">Мои навыки</h2></div>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <h4 class="skills__item-title skills__item-title_html">HTML5</h4>
+                <ul class="skills__sub-list">
+                  <li class="skills__sub-item skills__sub-item_ok">Основы HTML</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Валидный код</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Кроссбраузерность</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Семантика</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Доступность</li>
+                  <li class="skills__sub-item skills__sub-item_ok">БЭМ</li>
+                  <li class="skills__sub-item skills__sub-item_x">PUG</li>
+                </ul>
+              </li>
+              <li class="skills__item">
+                <h4 class="skills__item-title skills__item-title_css">CSS3</h4>
+                <ul class="skills__sub-list">
+                  <li class="skills__sub-item skills__sub-item_ok">Основы CSS</li>
+                  <li class="skills__sub-item skills__sub-item_ok">SCSS</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Media запросы</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Flex/Grid</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Keyframes</li>
+                  <li class="skills__sub-item skills__sub-item_ok">svg анимации</li>
+                  <li class="skills__sub-item skills__sub-item_x">Bootstrap</li>
+                </ul>
+              </li>
+              <li class="skills__item">
+                <h4 class="skills__item-title skills__item-title_js">JavaScript</h4>
+                <ul class="skills__sub-list">
+                  <li class="skills__sub-item skills__sub-item_ok">Основы JS</li>
+                  <li class="skills__sub-item skills__sub-item_ok">DOM/BOM</li>
+                  <li class="skills__sub-item skills__sub-item_ok">ES6</li>
+                  <li class="skills__sub-item skills__sub-item_ok">UI компоненты</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Devtools</li>
+                  <li class="skills__sub-item skills__sub-item_ok">AJAX</li>
+                  <li class="skills__sub-item skills__sub-item_ok">JSON</li>
+                  <li class="skills__sub-item skills__sub-item_ok">localStorage</li>
+                  <li class="skills__sub-item skills__sub-item_x">jQuery</li>
+                </ul>
+              </li>
+              <li class="skills__item">
+                <h4 class="skills__item-title skills__item-title_gulp">Gulp</h4>
+                <ul class="skills__sub-list">
+                  <li class="skills__sub-item skills__sub-item_ok">оптимизация сборки</li>
+                  <li class="skills__sub-item skills__sub-item_ok">.webp</li>
+                  <li class="skills__sub-item skills__sub-item_ok">.svg sprite</li>
+                  <li class="skills__sub-item skills__sub-item_ok">source maps</li>
+                  <li class="skills__sub-item skills__sub-item_ok">autoprefixer</li>
+                </ul>
+              </li>
+              <li class="skills__item">
+                <h4 class="skills__item-title skills__item-title_webpack">Webpack</h4>
+                <ul class="skills__sub-list">
+                  <li class="skills__sub-item skills__sub-item_ok">JS Bundle</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Terser Plugin</li>
+                  <li class="skills__sub-item skills__sub-item_ok">Babel</li>
+                </ul>
+              </li>
+              <li class="skills__item">
+                <h4 class="skills__item-title skills__item-title_figma">Figma</h4>
+                <ul class="skills__sub-list">
+                  <li class="skills__sub-item skills__sub-item_ok">Работа с макетом</li>
+                </ul>
+              </li>
+              <li class="skills__item">
+                <h4 class="skills__item-title skills__item-title_git">Git</h4>
+                <ul class="skills__sub-list">
+                  <li class="skills__sub-item skills__sub-item_ok">Основные Git команды</li>
+                </ul>
+              </li>
+              <li class="skills__item">
+                <h4 class="skills__item-title skills__item-title_wordpress">Wordpress</h4>
+                <ul class="skills__sub-list">
+                  <li class="skills__sub-item skills__sub-item_ok">Натяжка вёрстки и деплой</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="projects" class="projects">
+          <div class="container">
+            <div class="title-wrapper"><h2 class="projects__title title">Мои работы</h2></div>
+            <div class="projects__tabs-wrapper">
+              <ul class="projects__tabs-list">
+                <li class="projects__tab-item">
+                  <button class="projects__tab projects__tab_html projects__tab_active" data-tab-content="tab 1">Верстка</button>
+                </li>
+                <li class="projects__tab-item"><button class="projects__tab projects__tab_js" data-tab-content="tab 2">JavaScript</button></li>
+                <li class="projects__tab-item"><button class="projects__tab projects__tab_react" data-tab-content="tab 3">React</button></li>
+              </ul>
+              <div class="projects__tab-content projects__tab-content_active" data-tab-content="tab 1">
+                <div class="projects__warning">
+                  Некоторые проекты создавались в начале пути, качество кода и используемые технологии могут быть не актуальны, к примеру jQuery я уже
+                  не использую.
+                </div>
+                <ul class="projects__list">
+                  <li class="projects__item">
+                    <a class="projects__link" href="https://one-ess.github.io/gastrochef/build/index.html" target="_blank">
+                      <picture>
+                        <source srcset="./img/project-gastrochef.webp" type="image/webp" />
+                        <img class="projects__img" src="./img/project-gastrochef.jpg" loading="lazy" alt="Постер сайта GastroChef" />
+                      </picture>
+                    </a>
+                    <div class="projects__info">
+                      <h4 class="projects__info-title">О проекте:</h4>
+                      <div class="projects__accordion">
+                        <p class="projects__info-text projects__info-text_www">Сервис и доставка здорового питания GastroChef.</p>
+                        <p class="projects__info-text projects__info-text_arrow">
+                          Подробная информация о том, что использовалось, зависимостях, запуске и т.п - в файле README.md
+                        </p>
+                        <div class="projects__info-links">
+                          <a
+                            class="projects__info-link projects__info-link_eye"
+                            href="https://one-ess.github.io/gastrochef/build/index.html"
+                            target="_blank"
+                            >Смотреть
+                          </a>
+                          <a class="projects__info-link projects__info-link_github" href="https://github.com/one-ess/gastrochef" target="_blank">
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="projects__item">
+                    <a class="projects__link" href="https://one-ess.github.io/loft/build/index.html" target="_blank">
+                      <picture>
+                        <source srcset="./img/project-loft.webp" type="image/webp" />
+                        <img class="projects__img" src="./img/project-loft.jpg" loading="lazy" alt="Постер сайта Loft" />
+                      </picture>
+                    </a>
+                    <div class="projects__info">
+                      <h4 class="projects__info-title">О проекте:</h4>
+                      <div class="projects__accordion">
+                        <p class="projects__info-text projects__info-text_www">Интернет-магазин Loft с приятным, мягким дизайном.</p>
+                        <p class="projects__info-text projects__info-text_arrow">
+                          Подробная информация о том, что использовалось, зависимостях, запуске и т.п - в файле README.md
+                        </p>
+                        <div class="projects__info-links">
+                          <a
+                            class="projects__info-link projects__info-link_eye"
+                            href="https://one-ess.github.io/loft/build/index.html"
+                            target="_blank"
+                          >
+                            Смотреть
+                          </a>
+                          <a class="projects__info-link projects__info-link_github" href="https://github.com/one-ess/loft" target="_blank">GitHub</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="projects__item">
+                    <a class="projects__link" href="https://one-ess.github.io/3maski/dist/index.html" target="_blank">
+                      <picture>
+                        <source srcset="./img/project-3maski.webp" type="image/webp" />
+                        <img class="projects__img" src="./img/project-3maski.jpg" loading="lazy" alt="Постер сайта 3maski" />
+                      </picture>
+                    </a>
+                    <div class="projects__info">
+                      <h4 class="projects__info-title">О проекте:</h4>
+                      <div class="projects__accordion">
+                        <p class="projects__info-text projects__info-text_www">Корпоративный сайт по продажам масок-респираторов.</p>
+                        <p class="projects__info-text projects__info-text_arrow">
+                          Подробная информация о том, что использовалось, зависимостях, запуске и т.п - в файле README.md
+                        </p>
+                        <div class="projects__info-links">
+                          <a
+                            class="projects__info-link projects__info-link_eye"
+                            href="https://one-ess.github.io/3maski/dist/index.html"
+                            target="_blank"
+                            >Смотреть
+                          </a>
+                          <a class="projects__info-link projects__info-link_github" href="https://github.com/one-ess/3maski" target="_blank">
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="projects__item">
+                    <a class="projects__link" href="https://one-ess.github.io/go-surf/dist/index.html" target="_blank">
+                      <picture>
+                        <source srcset="./img/project-gosurf.webp" type="image/webp" />
+                        <img class="projects__img" src="./img/project-gosurf.jpg" loading="lazy" alt="Постер сайта go-surf" />
+                      </picture>
+                    </a>
+                    <div class="projects__info">
+                      <h4 class="projects__info-title">О проекте:</h4>
+                      <div class="projects__accordion">
+                        <p class="projects__info-text projects__info-text_www">Сложный лендинг с уникальным дизайном про сёрфинг и путешествия.</p>
+                        <p class="projects__info-text projects__info-text_arrow">
+                          Подробная информация о том что использовалось, зависимостях, запуске и т.п - в файле README.md
+                        </p>
+                        <div class="projects__info-links">
+                          <a
+                            class="projects__info-link projects__info-link_eye"
+                            href="https://one-ess.github.io/go-surf/dist/index.html"
+                            target="_blank"
+                            >Смотреть
+                          </a>
+                          <a class="projects__info-link projects__info-link_github" href="https://github.com/one-ess/go-surf" target="_blank">
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="projects__item">
+                    <a class="projects__link" href="https://one-ess.github.io/autorepair/dist/index.html" target="_blank">
+                      <picture>
+                        <source srcset="./img/project-autorepair.webp" type="image/webp" />
+                        <img class="projects__img" src="./img/project-autorepair.jpg" loading="lazy" alt="Постер сайта autorepair" />
+                      </picture>
+                    </a>
+                    <div class="projects__info">
+                      <h4 class="projects__info-title">О проекте:</h4>
+                      <div class="projects__accordion">
+                        <p class="projects__info-text projects__info-text_www">Простой лендинг с приятным дизайном про кузовной ремонт.</p>
+                        <p class="projects__info-text projects__info-text_arrow">
+                          Подробная информация о том, что использовалось, зависимостях, запуске и т.п - в файле README.md
+                        </p>
+                        <div class="projects__info-links">
+                          <a
+                            class="projects__info-link projects__info-link_eye"
+                            href="https://one-ess.github.io/autorepair/dist/index.html"
+                            target="_blank"
+                            >Смотреть
+                          </a>
+                          <a class="projects__info-link projects__info-link_github" href="https://github.com/one-ess/autorepair" target="_blank">
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="projects__item">
+                    <a class="projects__link" href="https://one-ess.github.io/gidroshop/dist/index.html" target="_blank">
+                      <picture>
+                        <source srcset="./img/project-gidroshop.webp" type="image/webp" />
+                        <img class="projects__img" src="./img/project-gidroshop.jpg" loading="lazy" alt="Постер сайта Drive Moto" />
+                      </picture>
+                    </a>
+                    <div class="projects__info">
+                      <h4 class="projects__info-title">О проекте:</h4>
+                      <div class="projects__accordion">
+                        <p class="projects__info-text projects__info-text_www">Интернет-магазин Drive Moto по продажам гидроциклов.</p>
+                        <p class="projects__info-text projects__info-text_arrow">
+                          Подробная информация о том, что использовалось, зависимостях, запуске и т.п - в файле README.md
+                        </p>
+                        <div class="projects__info-links">
+                          <a
+                            class="projects__info-link projects__info-link_eye"
+                            href="https://one-ess.github.io/gidroshop/dist/index.html"
+                            target="_blank"
+                            >Смотреть
+                          </a>
+                          <a class="projects__info-link projects__info-link_github" href="https://github.com/one-ess/gidroshop" target="_blank">
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="projects__tab-content" data-tab-content="tab 2">
+                <ul class="projects__list">
+                  <li class="projects__item">
+                    <a class="projects__link" href="https://one-ess.github.io/gOST/build/index.html" target="_blank">
+                      <picture>
+                        <source srcset="./img/project-gOST.webp" type="image/webp" />
+                        <img class="projects__img" src="./img/project-gOST.jpg" loading="lazy" alt="Постер приложения gamesOST" />
+                      </picture>
+                    </a>
+                    <div class="projects__info">
+                      <h4 class="projects__info-title">О проекте:</h4>
+                      <div class="projects__accordion">
+                        <p class="projects__info-text projects__info-text_www">Музыкальный плеер gamesOST</p>
+                        <p class="projects__info-text projects__info-text_arrow">
+                          Подробная информация о том, что использовалось, зависимостях, запуске и т.п - в файле README.md
+                        </p>
+                        <div class="projects__info-links">
+                          <a
+                            class="projects__info-link projects__info-link_eye"
+                            href="https://one-ess.github.io/gOST/build/index.html"
+                            target="_blank"
+                            >Смотреть
+                          </a>
+                          <a class="projects__info-link projects__info-link_github" href="https://github.com/one-ess/gOST" target="_blank">GitHub</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="projects__tab-content" data-tab-content="tab 3">Coming soon...</div>
+            </div>
+          </div>
+        </section>
+        <section id="contacts" class="contacts">
+          <div class="container">
+            <div class="title-wrapper"><h2 class="contacts__title title">Мои контакты</h2></div>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link-img contacts__link-img_vk" target="_blank" href="https://vk.com/oneonese7en"></a>
+                <a class="contacts__link-text" target="_blank" href="https://vk.com/oneonese7en">vk.com/oneonese7en</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link-img contacts__link-img_email" target="_blank" href="mailto:suz.2@mail.ru"></a>
+                <a class="contacts__link-text" target="_blank" href="mailto:suz.2@mail.ru">suz.2@mail.ru</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link-img contacts__link-img_whatsapp" target="_blank" href="https://api.whatsapp.com/send/?phone=87753524998"></a>
+                <a class="contacts__link-text" target="_blank" href="https://api.whatsapp.com/send/?phone=87753524998">+7 775 352 4998</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__copy">© Portfolio 2022 | Tukhvatulin Arthur</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

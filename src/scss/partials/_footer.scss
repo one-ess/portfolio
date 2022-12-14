@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #1d1421;
+  &__copy {
+    text-align: center;
+    font-weight: 300;
+  }
+}
