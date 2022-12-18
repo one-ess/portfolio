@@ -3,4 +3,4 @@
 
 Для того чтобы просмотреть портфолио перейдите по ссылке ниже:
 
-[https://one-ess.github.io/portfolio/build/index.html](https://one-ess.github.io/portfolio/build/index.html)
+[https://one-ess.github.io/portfolio/build/](https://one-ess.github.io/portfolio/build/)
