@@ -1,0 +1,42 @@
+@use "../settings/vars" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  background-color: #000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+section {
+  padding: 50px 0;
+  @media (max-width: 767px) {
+    padding: 40px 0;
+  }
+}

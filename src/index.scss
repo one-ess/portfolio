@@ -1,0 +1,12 @@
+@use "./scss/settings/fonts";
+@use "./scss/settings/null";
+@use "./scss/settings/base";
+
+@use "./scss/global/global";
+
+@use "./scss/sections/header";
+@use "./scss/sections/about";
+@use "./scss/sections/skills";
+@use "./scss/sections/projects";
+@use "./scss/sections/contacts";
+@use "./scss/sections/footer";

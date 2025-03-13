@@ -1,0 +1,329 @@
+@use "../settings/keyframes" as *;
+@use "../settings/mixins" as *;
+
+.projects {
+  &__tabs-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      gap: 15px;
+    }
+  }
+
+  &__tab {
+    position: relative;
+    padding: 15px 15px 15px 35px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%) translateX(50%);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    @media (max-width: 767px) {
+      padding: 12px 12px 12px 35px;
+      font-size: 14px;
+    }
+  }
+
+  &__tab_html {
+    &::before {
+      background-image: url("./img/icon-html.svg");
+    }
+  }
+
+  &__tab_js {
+    &::before {
+      background-image: url("./img/icon-js.svg");
+    }
+  }
+
+  &__tab_react {
+    &::before {
+      background-image: url("./img/icon-react.svg");
+    }
+  }
+
+  &__tab_active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__tab-content {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  &__tab-content_active {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    width: auto;
+    overflow: visible;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__item {
+    position: relative;
+    width: 550px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    &:hover {
+      .projects__info {
+        opacity: 1;
+        visibility: visible;
+      }
+      .projects__link {
+        filter: blur(3px);
+        &::before {
+          background-color: rgba(0, 0, 0, 0);
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      &:hover {
+        .projects__link {
+          filter: none;
+        }
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 85%;
+    padding: 30px 30px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    @include moving-gradient;
+    @media (max-width: 992px) {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0);
+      width: 100%;
+      height: 100%;
+      border-radius: 0 0 8px 8px;
+      padding: 20px 30px 20px 20px;
+    }
+    @media (max-width: 480px) {
+      padding-right: 20px;
+    }
+  }
+
+  &__info-title {
+    position: relative;
+    font-size: 20px;
+    padding-left: 37px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &::before {
+      width: 25px;
+      height: 25px;
+      left: 0;
+      background-image: url("./img/icon-info.svg");
+    }
+    @media (max-width: 992px) {
+      font-size: 16px;
+      padding-left: 27px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+      &::after {
+        width: 18px;
+        height: 18px;
+        right: 0;
+        background-image: url("./img/icon-arrow-right.svg");
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  &__info-title_active {
+    &::after {
+      transform: rotate(90deg) translateX(-50%);
+    }
+  }
+
+  &__info-text {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.1;
+    padding-left: 37px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    @media (max-width: 992px) {
+      padding-left: 0px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+
+  &__info-text_arrow {
+    flex-grow: 1;
+    font-weight: 300;
+    &::before {
+      width: 20px;
+      height: 20px;
+      left: 5px;
+      background-image: url("./img/icon-arrow-right.svg");
+    }
+    @media (max-width: 992px) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__info-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 11px 39px 13px 11px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    transition: all 0.3s ease;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 7px;
+      top: 50%;
+      width: 25px;
+      height: 25px;
+      transform: translateY(-50%);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    @media (max-width: 767px) {
+      padding: 10px 37px 10px 10px;
+      font-size: 14px;
+    }
+  }
+
+  &__info-link_github {
+    &::before {
+      background-image: url("./img/icon-github.svg");
+    }
+  }
+
+  &__info-link_eye {
+    &::before {
+      background-image: url("./img/icon-eye.svg");
+    }
+  }
+
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    height: 100%;
+    padding-top: 15px;
+    @media (max-width: 767px) {
+      row-gap: 12px;
+    }
+  }
+
+  &__accordion_hidden {
+    max-height: 0;
+    padding-top: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    box-sizing: content-box;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__accordion_show {
+    opacity: 1;
+    padding-top: 15px;
+  }
+}

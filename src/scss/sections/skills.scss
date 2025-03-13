@@ -1,0 +1,149 @@
+@use "../settings/keyframes" as *;
+@use "../settings/mixins" as *;
+
+.skills {
+  position: relative;
+  padding-top: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    background-image: url("./img/eye.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  @media (max-width: 992px) {
+    &::before {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 350px;
+    padding: 30px;
+    border-radius: 4px;
+    @include moving-gradient;
+    @media (max-width: 767px) {
+      width: 290px;
+      padding: 15px;
+    }
+  }
+
+  &__item-title {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 25px;
+    &::before {
+      display: none;
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      width: 50px;
+      height: 50px;
+      transform: translateY(-50%) translateX(100%);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    @media (max-width: 767px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+      &::before {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  &__item-title_html {
+    &::before {
+      display: block;
+      background-image: url("./img/icon-html.svg");
+    }
+  }
+
+  &__item-title_css {
+    &::before {
+      display: block;
+      background-image: url("./img/icon-css.svg");
+    }
+  }
+
+  &__item-title_js {
+    &::before {
+      display: block;
+      background-image: url("./img/icon-js.svg");
+    }
+  }
+
+  &__sub-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-left: 25px;
+    @media (max-width: 767px) {
+      row-gap: 7px;
+    }
+  }
+
+  &__sub-item {
+    position: relative;
+    font-weight: 400;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -25px;
+      width: 18px;
+      height: 18px;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+
+  &__sub-item_tick {
+    &::before {
+      background-image: url("./img/icon-tick.svg");
+    }
+  }
+}
+
+.codewars {
+  max-width: 400px;
+  margin-left: 40px;
+  padding-top: 30px;
+  @media (max-width: 1230px) {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

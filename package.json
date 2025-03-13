@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.85.0",
+    "vite": "^6.0.5"
+  }
+}
