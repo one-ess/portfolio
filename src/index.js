@@ -9,7 +9,7 @@ const tabsWrapper = document.querySelector(".projects__tabs-wrapper");
 const mediaQuery = window.matchMedia("(max-width: 992px)");
 
 const initAccordion = (e) => {
-  if (e.matches) {
+  if (e.matches || window.innerWidth <= 992) {
     accordionsWrapper.forEach((accordionWrapper) => {
       accordionWrapper.classList.add("projects__info_accordion");
     });
