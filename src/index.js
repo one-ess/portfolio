@@ -6,8 +6,10 @@ const accordionsWrapper = document.querySelectorAll(".projects__info");
 const accordions = document.querySelectorAll(".projects__accordion");
 const tabsWrapper = document.querySelector(".projects__tabs-wrapper");
 
-const initAccordion = () => {
-  if (window.innerWidth <= 992) {
+const mediaQuery = window.matchMedia("(max-width: 992px)");
+
+const initAccordion = (e) => {
+  if (e.matches) {
     accordionsWrapper.forEach((accordionWrapper) => {
       accordionWrapper.classList.add("projects__info_accordion");
     });
@@ -68,5 +70,5 @@ accordionsWrapper.forEach((accordionWrapper) => {
   });
 });
 
-window.addEventListener("resize", initAccordion);
 window.addEventListener("load", initAccordion);
+mediaQuery.addEventListener("change", initAccordion);
